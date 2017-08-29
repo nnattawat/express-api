@@ -11,6 +11,9 @@ createdb express_database_development
 # Migrate database
 node_modules/.bin/sequelize db:migrate
 
+# Load sample data
+node_modules/.bin/sequelize db:seed:all
+
 # Start local server
 DEBUG=express-locallibrary-tutorial:* npm run devstart
 ```
